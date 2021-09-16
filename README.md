@@ -17,7 +17,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ## Overview
 
-This is my first (sort of) fully completed and posted FE challenge!
+This is my second (sort of) fully completed and posted FE challenge!
 
 ### The challenge
 
