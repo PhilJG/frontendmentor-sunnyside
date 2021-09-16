@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="wordmark">sunnyside</div>
+    <a href="#" class="toggle-button" id="toggle">    
+      <ion-icon name="menu-outline" class="burger-icon"></ion-icon>
+    </a>
+    <a href="#" class="toggle-button " id="toggle-off">    
+      <ion-icon name="close-outline" class="toggle-off"></ion-icon>    
+    </a>
+    <ul class="nav-list" id="navList" >
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      <li class="nav-item "><a href="#" class="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <header class="container hero-container">
+    <div class="hero-text">
+      <h1>We are creatives</h1>
+      <svg class="arrow" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+    </div>
+  </header>
+  
+  <div class="column services-column" id="about">
+    <div class="col col-img brand-img">
+    </div>
+    <div class="col">
+      <div class="col-txt">
+        <h3 class="feature-box-txt">Transform your brand</h3>
+        <p class="feature-box-txt">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a class="learn-more-yellow" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col col-img audience-img">
+    </div>
+
+  <div class="col">
+    <div class="col-txt">
+        <h3 class="feature-box-txt">Stand out to the right audience</h3>
+        <p class="feature-box-txt">  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a class="learn-more-pink" href="#">Learn More</a>
+    </div>
+  </div>
+</div>
+  
+  <div class="column services-column" id="services">
+      <div class="col col-img feature-box graphic-design-box">
+        <div class="col-txt feature-txt graphic-txt">
+          <h3>Graphic design</h3>
+          <p class="graphic-txt">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </div>
+      <div class="col col-img feature-box photography-box">
+        <div class="col-txt feature-txt photography-txt">
+          <h3>Photography</h3>
+          <p class="photography-txt">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="testimonial">
+  <h4>Client Testimonials</h4>
+  <div class="column testimonials-grid" id="projects">
+    <div class="col testimonial-col">
+      <img src="images/image-emily.jpg" class="client-img" alt="">
+      <p class="small-p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <h4>Emily R.</h4>
+      <p class="small-p"> Marketing Director </p>
+    </div>
+    <div class="col testimonial-col">
+      <img src="images/image-thomas.jpg" class="client-img" alt="">
+      <p class="small-p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience. </p>
+      <h4>Thomas S.</h4>
+      <p class="small-p">Chief Operating Officer</p>
+    </div>
+    <div class="col testimonial-col">
+      <img src="images/image-jennie.jpg" class="client-img" alt="">
+      <p class="small-p">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended! </p>
+      <h4>Jennie F.</h4>
+      <p class="small-p">Business Owner</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="column-cards">
+      <img  class="col-img col image-section milk-img"  src="images/mobile/image-gallery-milkbottles.jpg">
+      <img  class="col-img col image-section orange-img" src="images/mobile/image-gallery-orange.jpg">
+      <img  class="col-img col image-section cone-img" src="images/mobile/image-gallery-cone.jpg">
+      <img  class="col-img col image-section cubes-img" src="images/mobile/image-gallery-sugar-cubes.jpg">
+  </div>
+
+  <footer>
+    <div class="wordmark wordmark-footer">sunnyside</div>
+    <div class="footer-row row">
+      <a href="" class="footer-links links">About</a>
+      <a href="" class="footer-links links">Services</a>
+      <a href="" class="footer-links links">Projects</a>
+      </div>
+      <div class="footer-row ">
+        <a href="" class="social-links links"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="" class="social-links links"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="" class="social-links links"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="" class="social-links links"><ion-icon name="logo-pinterest"></ion-icon></a>
+      </div>
+  </footer>
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Phil Gray</a>.
+  </div>
+
+  <script src="script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

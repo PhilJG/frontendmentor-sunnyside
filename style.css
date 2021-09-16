@@ -1,0 +1,494 @@
+/*   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Colors */
+
+/* Primary */
+:root {
+    --primary-soft-red: hsl(7, 99%, 70%);
+    --primary-yellow: hsl(51, 100%, 49%);
+    --primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --primary-dark-blue: hsl(198, 62%, 26%);
+    --primary-moderate-cyan: hsl(168, 37%, 59%);
+
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    --header-text: 'Fraunces', serif;
+
+    --body-text: 'Barlow', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 18px;
+    overflow-x: clip;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    color: grey;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url(images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Nav */
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    z-index: 10;
+    padding: 2rem;
+    width: 100%;
+
+}
+
+.nav-list {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 91% 7%, 0 7%);
+    height: 60vh;
+}
+
+.nav-item {
+    display: block;
+    text-align: center;   
+}
+
+.nav-link {
+    color: grey;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.nav-contact {
+    color: black;
+    font-family: var(--header-text);
+    background-color: var(--primary-yellow);
+    padding: .5rem 1.5rem;
+    border-radius: 40px;
+}
+
+.toggle-button {
+    top: 7%;
+    right: 4%;
+    position: absolute;
+    color: white;
+}
+
+#toggle-off {
+    visibility: hidden;
+}
+.toggle-off {
+    width: 25px;
+    height: 25px;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.wordmark {
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.burger-icon {
+    font-size: 1.5rem;
+}
+/* Hero */
+
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.arrow {
+    width: 36px; 
+    height: 114px;
+}
+h1 {
+    font-family: var(--header-text);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    
+}
+
+h3, h4, h6 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900; 
+    text-align: center;
+}
+
+/* Columns */
+
+.column {
+    display: grid;
+    grid-auto-flow: row;
+
+}
+
+.column #services {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.column-cards {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.col {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center
+
+}
+
+.col-cards {
+    width: 50vw;
+    position: relative;
+
+
+}
+
+.col-txt {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.col-img {
+    background-size: cover;
+    background-position: top;
+
+
+}
+
+.audience-img {
+    background-image: url(images/mobile/image-stand-out.jpg);
+    height: 75vh;
+}
+
+.brand-img {
+    background-image: url(images/mobile/image-transform.jpg);
+    height: 75vh;
+}
+
+.learn-more-yellow {
+    font-family: 'Fraunces', serif;
+    border-bottom: 5px solid var(--primary-yellow);
+    color: var(--very-dark-desaturated-blue);
+}
+
+.learn-more-pink {
+    font-family: 'Fraunces', serif;
+    border-bottom: 5px solid var(--primary-soft-red);
+    color: var(--very-dark-desaturated-blue);
+}
+
+.feature-box {
+    height: 150vh;
+
+}
+
+.graphic-design-box {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    
+}
+
+.client-img {
+    border-radius: 50%;
+
+}
+
+.graphic-txt {
+    color: var(--primary-dark-desaturated-cyan)
+}
+
+
+.photography-box {
+    background-image: url(images/mobile/image-photography.jpg);
+    
+}
+
+.photography-txt {
+    color: var(--primary-dark-blue);
+}
+
+.feature-txt {
+    padding-top: 75%;
+}
+
+/* Client Testimonials */
+.testimonial {
+    padding: 3rem 1rem;
+}
+
+.testimonial-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  1rem 2.5rem;
+}
+
+.client-img {
+    width: 60px;
+}
+
+.small-p {
+    font-size: small;
+    padding: 1rem;
+    color: rgb(172, 172, 172);
+}
+
+/* Images section */
+.img-section {
+    width: auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-moderate-cyan);
+    color: var(--dark-moderate-cyan);
+    text-align: center;
+}
+
+.wordmark-footer {
+    padding: 2rem;
+}
+.footer-row {
+
+    padding-bottom: 3rem;
+}
+
+.links:hover {
+    color: white;
+    opacity: 1;
+}
+
+.social-links {
+    color: var(--dark-moderate-cyan);
+}
+
+.footer-links {
+    color: var(--primary-dark-desaturated-cyan);
+    font-family: 'Barlow', sans-serif;
+    opacity: .5;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Media Queries */
+
+/* Desktop */
+@media (min-width: 376px) {
+
+    /* Nav */
+    .nav-list {
+        visibility: hidden;
+    }
+
+    /* Hero */
+    header {
+        background-image: url(images/desktop/image-header.jpg);
+        background-position: center;
+    }
+
+    .hero-text {
+        top: 40%;
+    }
+
+    /* Columns */
+
+    .audience-img {
+        background-image: url(images/desktop/image-stand-out.jpg);
+
+    }
+
+    .brand-img {
+        background-image: url(images/desktop/image-transform.jpg);
+    }
+
+    .milk-img {
+        background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    .orange-img {
+        background-image: url(images/desktop/image-gallery-orange.jpg);
+    }
+
+    .cubes-img {
+        background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    }
+}
+
+@media (min-width: 649px){
+    
+/* Navbar */
+
+
+.burger-icon {
+    visibility: hidden;
+}
+
+.navbar {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    width: 100vw;
+    justify-content: space-between;
+
+}
+
+.nav-list {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 0rem;
+    margin: 0rem;
+    clip-path: none; 
+}
+
+.nav-item {
+    display: block;
+    text-align: center;  
+    padding: 0 1rem; 
+}
+
+.nav-link {
+    color: white;
+    font-size: .75rem;
+}
+
+.nav-contact {
+    color: black;
+    font-family: var(--header-text);
+    background-color: white;
+    border-radius: 40px;
+    font-size: .75rem;
+}
+
+.nav-contact:hover {
+    color: grey;
+    opacity: .6;
+}
+
+/* Column */
+.column {
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+    .services-column {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+        
+        .services-column .col:nth-of-type(1) {
+          order: 1;
+        }
+        
+        .services-column .col:nth-of-type(2) {
+          order: 2;
+        }
+        
+        .services-column .col:nth-of-type(3) {
+          order: 4;
+        }
+        
+        .services-column .col:nth-of-type(4) {
+          order: 3;
+        }
+
+        .column-cards {
+            display: grid;
+            flex-direction: row;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+/* Testimonials */
+
+        .testimonial {
+            padding: 3rem;
+        }
+
+        .testimonials-grid{
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
